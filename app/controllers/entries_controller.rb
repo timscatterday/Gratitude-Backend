@@ -37,12 +37,12 @@ class EntriesController < ApplicationController
         render json: hide_user_id(@entry)
     end
 
-    # deletes entry by id
+    # deletes entry by id/ add try/catch
     def destroy
         @entry = Entry.find_by(:id => params[:id], :user_id => params[:user_id])
         @entry_copy = @entry.deep_dup
 
-        if @entry.destroy!
+        if @entry.destroy
             puts "entry_controller.destroy @entry"
             puts @entry
             render json: hide_user_id(@entry_copy)

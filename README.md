@@ -1,5 +1,8 @@
 # Gratitude Journal Backend
 
+TODO: deploy to heroku and add link
+Take a screenshot of the app and put it in the Readme
+
 * Practicing gratitude is one of the healthiest things you can do
 
 * So, instead of writing a Todo App I wrote a simple CRUD app that forces you to be grateful
